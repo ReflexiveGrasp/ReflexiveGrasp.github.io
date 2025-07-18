@@ -182,53 +182,191 @@
 
           <div class="columns is-left" style="margin-top: 20px;">
             <div class="content">
-              <h2 class="title is-4">1.1. Single Target Object</h2>
+              <h2 class="title is-4">1.1. Geometric Results (No Physics Involved)</h2>
             </div>            
-          </div>
-          
-          <div class="columns is-centered has-text-justified" 
-               style="max-width: 1000px;">
-            <div class="column is-full-width">
-              <p style="font-size: 1.1em;">
-                Videos of our reactive regrasping algorithms running on the MuJoCo physics engine demonstrate robust real-time adaptation to dynamic perturbations of both the robot and the objects.
-              </p>
-            </div>
           </div>
           
 
           <div class="columns is-left" style="margin-top: 20px;">
             <div class="content">
-              <h2 class="title is-5">1.1. Wine Glass</h2>
+              <h2 class="title is-5">1.1.1. Ellipsoid</h2>
             </div>            
           </div>
 
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <div class="content">
-                <p class="title is-6" style="font-weight: normal;">Recovery from External Perturbations</p> <br>
-                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -15px;">
-                  <source src="./assets/videos/WineGlass_robot_pushed.mp4" type="video/mp4">
+                <p class="title is-6" style="font-weight: normal;">Projected Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 450px; margin-top: -100px;">
+                  <source src="./assets/videos/toy_ellipsoid_pgd.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
             <div class="column has-text-centered">
               <div class="content">
-                <p class="title is-6" style="font-weight: normal;">Dynamic Adaptation to Moving Objects</p> <br>
-                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -15px;">
-                  <source src="./assets/videos/WineGlass_target_reset.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <div class="column has-text-centered">
-              <div class="content">
-                <p class="title is-6" style="font-weight: normal;">Realtime Fingertip Paths Optimization</p> <br>
-                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -15px;">
-                  <source src="./assets/videos/WineGlass_3D_path_visualization.mp4" type="video/mp4">
+                <p class="title is-6" style="font-weight: normal;">Cross-Finger Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 450px; margin-top: -100px;">
+                  <source src="./assets/videos/toy_ellipsoid_cfgd.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
           </div>
 
+          <div class="columns is-left" style="margin-top: 20px;">
+            <div class="content">
+              <h2 class="title is-5">1.1.2. Superquadrics</h2>
+            </div>            
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Projected Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 450px; margin-top: -100px;">
+                  <source src="./assets/videos/toy_superquadric_pgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Cross-Finger Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 450px; margin-top: -100px;">
+                  <source src="./assets/videos/toy_superquadric_cfgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-left" style="margin-top: 20px;">
+            <div class="content">
+              <h2 class="title is-5">1.1.3. Torus</h2>
+            </div>            
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Projected Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 450px; margin-top: -100px;">
+                  <source src="./assets/videos/toy_torus_pgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Cross-Finger Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 450px; margin-top: -100px;">
+                  <source src="./assets/videos/toy_torus_cfgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-left" style="margin-top: 20px;">
+            <div class="content">
+              <h2 class="title is-4">1.2. Results in Physics Engine (Mujoco)</h2>
+            </div>            
+          </div>
+          
+
+          <div class="columns is-left" style="margin-top: 20px;">
+            <div class="content">
+              <h2 class="title is-5">1.2.1. Box</h2>
+            </div>            
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Vanilla (No Reflex)</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_box_vanilla.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Projected Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_box_ours_pgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Cross-Finger Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_box_ours_cfgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-left" style="margin-top: 20px;">
+            <div class="content">
+              <h2 class="title is-5">1.2.2. Cylinder</h2>
+            </div>            
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Vanilla (No Reflex)</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_cylinder_vanilla.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Projected Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_cylinder_ours_pgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Cross-Finger Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_cylinder_ours_cfgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-left" style="margin-top: 20px;">
+            <div class="content">
+              <h2 class="title is-5">1.2.3. Ellipsoid</h2>
+            </div>            
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Vanilla (No Reflex)</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_ellipsoid_vanilla.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Projected Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_ellipsoid_ours_pgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div class="content">
+                <p class="title is-6" style="font-weight: normal;">Cross-Finger Gradient Descent</p> <br>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px; margin-top: -30px;">
+                  <source src="./assets/videos/mujoco_ellipsoid_ours_cfgd.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
 
 
         <div class="columns is-left" style="margin-top: 40px;">
