@@ -87,7 +87,7 @@
         <div class="column has-text-centered">
           
           <!-- Title. -->
-          <h1 class="title is-2 publication-title">A Tactile-Reactive Grasping Framework For Multi-DoF Grippers via High-Bandwidth Tactile Feedback</h1>
+          <h1 class="title is-2 publication-title">High-Bandwidth Tactile-Reactive Control for Grasp Adjustment</h1>
           <p class="subtitle">Under review</p>
           
           <!-- Authors. -->
@@ -157,7 +157,7 @@
                style="max-width: 1000px; background-color: #f5f5f5;">
             <div class="column is-full-width">
               <p style="color: #333333; font-size: 1.25em; font-weight: bold;">
-                TL;DR: We tackle the “last-centimeter problem” with a tactile-reactive controller that refines grasps without object models or precise poses, improving stability on a 15-DoF arm–hand system.
+                TL;DR: We propose a tactile-reactive controller that refines grasps without object models or precise poses, improving grasp stability on a 15-DoF arm–hand system.
               </p>
             </div>
           </div>
@@ -186,7 +186,9 @@
                   <h2 class="title is-3">Abstract</h2>
                   <div class="content has-text-justified">
                     <p>
-                       The last centimeter problem -- an abrupt rise in complexity during the final stage of manipulation due to contact uncertainty -- is difficult to handle robustly using vision alone. High‑bandwidth tactile feedback, when paired with a well‑designed tactile‑reactive (reflexive) controller, can significantly improve robustness in the presence of perception errors. In this paper, we tackle the challenge of robust grasping by introducing a reflexive grasp‑adjustment algorithm for multi‑DoF grippers. The proposed controller requires neither prior knowledge of the object’s geometry nor an accurate grasp pose, and is capable of refining a grasp even when starting from a crude, imprecise initial configuration and uncertain contact points. Through simulation studies and real‑world experiments on a 15‑DoF arm–hand system (featuring an 8‑DoF hand) equipped with fingertip tactile sensors operating at up to 200 Hz, we demonstrate that our reflexive grasping framework effectively improves grasp stability. 
+                       Vision-only grasping systems are fundamentally constrained by calibration errors, sensor noise, and grasp-pose prediction inaccuracies, leading to unavoidable contact uncertainty in the final stage of grasping.
+ High‑bandwidth tactile feedback, when paired with a well‑designed tactile‑reactive controller, can significantly improve robustness in the presence of perception errors. 
+ This paper contributes to controller design by proposing a purely tactile-feedback grasp-adjustment algorithm. The proposed controller requires neither prior knowledge of the object’s geometry nor an accurate grasp pose, and is capable of refining a grasp even when starting from a crude, imprecise initial configuration and uncertain contact points. Through simulation studies and real‑world experiments on a 15‑DoF arm–hand system (featuring an 8‑DoF hand) equipped with fingertip tactile sensors operating at 200 Hz, we demonstrate that our tactile-reactive grasping framework effectively improves grasp stability.  
                     </p>
                   </div>
                 </div>
